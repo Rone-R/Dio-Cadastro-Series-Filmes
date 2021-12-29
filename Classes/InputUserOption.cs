@@ -1,3 +1,4 @@
+#nullable enable
 namespace Dio_Series
 {
     public class InputUserOption
@@ -13,9 +14,9 @@ namespace Dio_Series
             Console.WriteLine("X - Sair");
             Console.WriteLine();
 
-            string optionUser = Console.ReadLine().ToUpper();
+            string optionUser = Console.ReadLine()!.ToUpper();
             Console.WriteLine();
-            return optionUser.ToUpper();
+            return optionUser;
         }
         public static string OptionBack()
         {
@@ -24,7 +25,7 @@ namespace Dio_Series
             Console.WriteLine("\n1 - Voltar");
             Console.WriteLine("\nAperte qualquer tecla para sair.");
 
-            string optionBack = Console.ReadLine().ToUpper();
+            string optionBack = Console.ReadLine()!.ToUpper();
             Console.WriteLine();
             return optionBack.ToUpper();
         }
@@ -43,9 +44,9 @@ namespace Dio_Series
             Console.WriteLine("X - Sair");
             Console.WriteLine();
 
-            string optionUserSeries = Console.ReadLine().ToUpper();
+            string optionUserSeries = Console.ReadLine()!.ToUpper();
             Console.WriteLine();
-            return optionUserSeries.ToUpper();
+            return optionUserSeries;
         }
         public static string OptionFilme()
         {
@@ -62,9 +63,9 @@ namespace Dio_Series
             Console.WriteLine("X - Sair");
             Console.WriteLine();
 
-            string optionUserFilmes = Console.ReadLine().ToUpper();
+            string optionUserFilmes = Console.ReadLine()!.ToUpper();
             Console.WriteLine();
-            return optionUserFilmes.ToUpper();
+            return optionUserFilmes;
         }
     }
 }

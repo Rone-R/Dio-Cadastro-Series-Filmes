@@ -8,7 +8,7 @@ namespace Dio_Series
         public static void OptionCategoria()
         {
             Console.Clear();
-            string optionCategoria = InputUserOption.OptionCategoria();
+            string? optionCategoria = InputUserOption.OptionCategoria();
             if (optionCategoria == "1")
             {
                 OptionsFilmes();
@@ -48,7 +48,7 @@ namespace Dio_Series
             Console.WriteLine("\n---------------------------\n");
             if (SerieOptionCRUD.GetSeries.Count == 0)
             {
-                Console.WriteLine("\n Ops! Nenhuma série foi encontrada :(..."); return;
+                Console.WriteLine("\n Ops! Nenhuma série foi encontrada :(...");
             }
             else
             {
@@ -58,7 +58,7 @@ namespace Dio_Series
                     Console.WriteLine($"Name: {series.GetTitle} - Ano:{series.GetYear}");
                 }
             }
-            string optionBack = InputUserOption.OptionBack();
+            string? optionBack = InputUserOption.OptionBack();
             if (optionBack == "1")
             {
                 Console.Clear();
@@ -119,7 +119,7 @@ namespace Dio_Series
         public static void OptionsFilmes()
         {
             Console.Clear();
-            string optionFilmes = InputUserOption.OptionFilme();
+            string? optionFilmes = InputUserOption.OptionFilme();
             while (optionFilmes != "X" && optionFilmes != "R")
             {
                 Console.Clear();
